@@ -31,27 +31,24 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 
 /* Glassmorphism */
 .glass-panel {
-  background: var(--glass-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid var(--glass-border);
-  box-shadow: var(--glass-shadow);
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   border-radius: 1rem;
 }
 
 .glass-card {
-  background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(0,0,0,0.05);
+  background: #ffffff;
+  border: 1px solid rgba(0,0,0,0.1);
   border-radius: 15px;
   transition: all 0.4s ease;
   overflow: hidden;
-  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .glass-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
   border-color: var(--neon-accent);
 }
 
@@ -182,12 +179,12 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   background: #fff;
   padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
   margin-bottom: 20px;
   transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
-  border: 1px solid rgba(0,0,0,0.02);
+  border: 1px solid rgba(0,0,0,0.1);
 }
 .about-feature-box::before {
   content: '';
@@ -296,7 +293,8 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   overflow: hidden;
   transition: all 0.4s ease;
   z-index: 1;
-  border: 1px solid rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
 }
 .metric-box::before {
   content: '';
@@ -376,7 +374,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 .quote-icon { position: absolute; top: 20px; right: 20px; font-size: 4rem; color: rgba(0,0,0,0.03); }
 
 /* Accordion FAQ */
-.accordion-item { background: #fff; border: 1px solid rgba(0,0,0,0.05); margin-bottom: 1rem; border-radius: 10px !important; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.02);}
+.accordion-item { background: #fff; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 1rem; border-radius: 10px !important; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);}
 .accordion-button { background: #fff; color: var(--text-dark); font-weight: 600; box-shadow: none !important; }
 .accordion-button:not(.collapsed) { background: var(--secondary-light); color: var(--neon-accent); }
 .accordion-button::after { filter: none; }
