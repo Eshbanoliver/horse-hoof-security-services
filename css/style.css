@@ -781,6 +781,7 @@ footer {
   border-top: 1px solid rgba(0,0,0,0.05);
   padding: 60px 0 20px;
   position: relative;
+  overflow: hidden;
 }
 .footer-links a { color: var(--silver); text-decoration: none; transition: 0.3s; display: block; margin-bottom: 10px; }
 .footer-links a:hover { color: var(--neon-accent); padding-left: 5px; }
