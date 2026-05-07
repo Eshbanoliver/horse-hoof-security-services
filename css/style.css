@@ -130,6 +130,76 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 .hero-content h1, .hero-content p { color: var(--text-dark) !important; }
 .hero-title { font-size: 4rem; line-height: 1.2; margin-bottom: 1.5rem; }
 
+/* About Section Enhanced */
+.about-image-stack {
+  position: relative;
+  height: 500px;
+}
+.about-img-1 {
+  width: 85%;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 20px 20px 60px rgba(0,0,0,0.05);
+}
+.about-img-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 20px;
+  border: 8px solid #fff;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+  z-index: 2;
+}
+.decorative-blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: var(--primary-light);
+  filter: blur(100px);
+  opacity: 0.1;
+  border-radius: 50%;
+  z-index: -1;
+  animation: float-blob 10s infinite alternate;
+}
+@keyframes float-blob {
+  from { transform: translate(0, 0); }
+  to { transform: translate(30px, 50px); }
+}
+
+.about-feature-box {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.02);
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+.about-feature-box:hover {
+  transform: translateX(10px);
+  border-left-color: var(--neon-accent);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+.experience-badge-premium {
+  background: linear-gradient(135deg, var(--royal-blue), var(--primary-light));
+  color: #fff;
+  padding: 25px;
+  border-radius: 25px;
+  position: absolute;
+  top: 10%;
+  left: -20px;
+  z-index: 3;
+  box-shadow: 0 15px 35px rgba(29, 78, 216, 0.3);
+  text-align: center;
+}
+.experience-badge-premium h3 { font-size: 2.5rem; margin-bottom: 0; }
+.experience-badge-premium p { margin-bottom: 0; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; }
+
 /* Sections General */
 .section-padding { padding: 100px 0; }
 .bg-darker { background-color: var(--secondary-light); }
