@@ -726,12 +726,52 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 .testimonial-card { padding: 2rem; position: relative; }
 .quote-icon { position: absolute; top: 20px; right: 20px; font-size: 4rem; color: rgba(0,0,0,0.03); }
 
-/* Accordion FAQ */
-.accordion-item { background: #fff; border: 1px solid rgba(0,0,0,0.1); margin-bottom: 1rem; border-radius: 10px !important; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05);}
-.accordion-button { background: #fff; color: var(--text-dark); font-weight: 600; box-shadow: none !important; }
-.accordion-button:not(.collapsed) { background: var(--secondary-light); color: var(--neon-accent); }
-.accordion-button::after { filter: none; }
-.accordion-body { background: #fff; color: var(--silver); }
+/* Custom FAQ Redesign */
+.accordion-item.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px !important;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+}
+.accordion-item.glass-panel:hover {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+  transform: translateY(-5px);
+  border-color: var(--neon-accent);
+}
+.accordion-button {
+  background: transparent !important;
+  color: var(--text-dark) !important;
+  font-size: 1.15rem;
+  font-weight: 700;
+  padding: 25px 35px;
+  box-shadow: none !important;
+  border: none !important;
+}
+.accordion-button:not(.collapsed) {
+  color: var(--neon-accent) !important;
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230088cc'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e%3cpath fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3e%3c/svg%3e") !important;
+  background-size: 28px;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.4s ease;
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23FF512F'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e%3cpath fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3e%3c/svg%3e") !important;
+  transform: rotate(180deg);
+}
+.accordion-body {
+  padding: 0 35px 35px;
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
 
 /* Footer */
 footer {
