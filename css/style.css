@@ -287,8 +287,73 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 .glass-card:hover .service-icon { transform: scale(1.1); }
 
 /* About / Vision / Core Values */
-.metric-box { text-align: center; padding: 2rem; }
-.metric-number { font-size: 3rem; font-weight: 800; color: var(--neon-accent); margin-bottom: 0.5rem; font-family: 'Outfit'; }
+.metric-box {
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+  border-radius: 20px;
+  background: #fff;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  z-index: 1;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+.metric-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--metric-bg);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+.metric-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+  border-color: transparent;
+}
+.metric-box:hover::before {
+  opacity: 0.05;
+}
+.metric-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: var(--metric-color);
+  transition: transform 0.4s ease;
+}
+.metric-box:hover .metric-icon {
+  transform: scale(1.2);
+}
+.metric-number {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  font-family: 'Outfit';
+  background: var(--metric-color-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.metric-variant-1 {
+  --metric-color: #FF512F;
+  --metric-color-gradient: linear-gradient(135deg, #FF512F, #DD2476);
+  --metric-bg: linear-gradient(135deg, #FF512F, #DD2476);
+}
+.metric-variant-2 {
+  --metric-color: #00b4db;
+  --metric-color-gradient: linear-gradient(135deg, #00b4db, #0083b0);
+  --metric-bg: linear-gradient(135deg, #00b4db, #0083b0);
+}
+.metric-variant-3 {
+  --metric-color: #8E2DE2;
+  --metric-color-gradient: linear-gradient(135deg, #8E2DE2, #4A00E0);
+  --metric-bg: linear-gradient(135deg, #8E2DE2, #4A00E0);
+}
+.metric-variant-4 {
+  --metric-color: #f2994a;
+  --metric-color-gradient: linear-gradient(135deg, #f2994a, #f2c94c);
+  --metric-bg: linear-gradient(135deg, #f2994a, #f2c94c);
+}
 
 /* Timeline */
 .timeline { position: relative; padding: 2rem 0; }
