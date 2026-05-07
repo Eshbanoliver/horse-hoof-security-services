@@ -52,9 +52,33 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section text-white position-relative" id="home">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content text-center text-lg-start">
+    <section class="hero-section text-white position-relative overflow-hidden" id="home">
+        <!-- Hero Slider Background -->
+        <div id="heroCarousel" class="carousel slide carousel-fade position-absolute top-0 start-0 w-100 h-100" data-bs-ride="carousel" style="z-index: 0;">
+            <div class="carousel-inner w-100 h-100">
+                <div class="carousel-item active w-100 h-100">
+                    <img src="assets/images/hero_slider_1.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="CCTV Security">
+                </div>
+                <div class="carousel-item w-100 h-100">
+                    <img src="assets/images/hero_slider_2.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Bank Vault Security">
+                </div>
+                <div class="carousel-item w-100 h-100">
+                    <img src="assets/images/hero_slider_3.png" class="d-block w-100 h-100" style="object-fit: cover;" alt="Security Patrol Vehicles">
+                </div>
+            </div>
+            <!-- Slider Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" style="z-index: 5;">
+                <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" style="z-index: 5;">
+                <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        
+        <div class="hero-overlay" style="z-index: 1;"></div>
+        <div class="container hero-content text-center text-lg-start position-relative" style="z-index: 2;">
             <div class="row align-items-center">
                 <div class="col-lg-8" data-aos="fade-up" data-aos-duration="1000">
                     <span class="badge bg-transparent border border-info text-neon mb-3 py-2 px-3 rounded-pill">
