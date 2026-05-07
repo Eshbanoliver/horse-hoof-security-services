@@ -528,20 +528,40 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 .choose-card {
   position: relative;
   background: #fff;
+  background-image: radial-gradient(var(--choose-color, #0088cc) 1px, transparent 1px);
+  background-size: 15px 15px;
   border-radius: 20px;
   overflow: hidden;
   transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
   border: 1px solid rgba(0,0,0,0.05);
   z-index: 1;
 }
-.choose-card::before {
+.choose-card::before,
+.choose-card::after {
   content: '';
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background-image: radial-gradient(var(--choose-color, #0088cc) 1px, transparent 1px);
-  background-size: 15px 15px;
-  opacity: 0.05;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  filter: blur(25px);
   z-index: -1;
+  opacity: 0.15;
+  transition: all 0.5s ease;
+}
+.choose-card::before {
+  top: -30px;
+  left: -30px;
+  background: var(--choose-color);
+}
+.choose-card::after {
+  bottom: -30px;
+  right: -30px;
+  background: var(--choose-color);
+}
+.choose-card:hover::before,
+.choose-card:hover::after {
+  transform: scale(1.4);
+  opacity: 0.25;
 }
 .choose-card:hover {
   transform: translateY(-10px);
