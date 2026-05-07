@@ -180,18 +180,58 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 
 .about-feature-box {
   background: #fff;
-  padding: 15px 20px;
+  padding: 20px;
   border-radius: 15px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.02);
-  margin-bottom: 15px;
-  transition: all 0.3s ease;
-  border-left: 4px solid transparent;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+  margin-bottom: 20px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0,0,0,0.02);
+}
+.about-feature-box::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--card-accent, transparent);
+  transition: all 0.4s ease;
 }
 .about-feature-box:hover {
-  transform: translateX(10px);
-  border-left-color: var(--neon-accent);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
+.about-feature-box:hover::before {
+  width: 100%;
+  opacity: 0.05;
+}
+
+.icon-box-vibrant {
+  width: 55px;
+  height: 55px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+  flex-shrink: 0;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+.about-feature-box:hover .icon-box-vibrant {
+  transform: scale(1.1) rotate(5deg);
+}
+
+.feature-variant-1 { --card-accent: #FF512F; }
+.feature-variant-1 .icon-box-vibrant { background: linear-gradient(135deg, #FF512F, #DD2476); box-shadow: 0 8px 20px rgba(221, 36, 118, 0.3); }
+
+.feature-variant-2 { --card-accent: #00b4db; }
+.feature-variant-2 .icon-box-vibrant { background: linear-gradient(135deg, #00b4db, #0083b0); box-shadow: 0 8px 20px rgba(0, 180, 219, 0.3); }
+
+.feature-variant-3 { --card-accent: #8E2DE2; }
+.feature-variant-3 .icon-box-vibrant { background: linear-gradient(135deg, #8E2DE2, #4A00E0); box-shadow: 0 8px 20px rgba(142, 45, 226, 0.3); }
 
 .experience-badge-premium {
   background: linear-gradient(135deg, var(--royal-blue), var(--primary-light));
