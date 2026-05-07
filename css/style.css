@@ -185,23 +185,23 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(0,0,0,0.1);
+  border-left: 4px solid var(--card-accent, transparent);
 }
 .about-feature-box::before {
   content: '';
   position: absolute;
-  top: 0; left: 0;
-  width: 4px;
-  height: 100%;
+  top: 0; left: 0; right: 0; bottom: 0;
   background: var(--card-accent, transparent);
+  opacity: 0.05;
   transition: all 0.4s ease;
+  z-index: 0;
 }
 .about-feature-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 35px rgba(0,0,0,0.08);
 }
 .about-feature-box:hover::before {
-  width: 100%;
-  opacity: 0.05;
+  opacity: 0.1;
 }
 
 .icon-box-vibrant {
@@ -301,7 +301,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: var(--metric-bg);
-  opacity: 0;
+  opacity: 0.05;
   transition: opacity 0.4s ease;
   z-index: -1;
 }
@@ -311,7 +311,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   border-color: transparent;
 }
 .metric-box:hover::before {
-  opacity: 0.05;
+  opacity: 0.1;
 }
 .metric-icon {
   font-size: 2.5rem;
