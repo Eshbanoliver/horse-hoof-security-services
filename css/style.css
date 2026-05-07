@@ -617,6 +617,55 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   font-size: 1.1rem;
 }
 
+/* CTA Premium Section */
+.cta-premium {
+  position: relative;
+  background: url('../assets/images/cta_bg.png') no-repeat center center/cover;
+  background-attachment: fixed;
+  padding: 120px 0;
+  overflow: hidden;
+  z-index: 1;
+}
+.cta-premium::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(15, 23, 42, 0.75));
+  z-index: -1;
+}
+.cta-premium .cta-glow {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 180, 219, 0.2), transparent 70%);
+  filter: blur(100px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+}
+.btn-glass-premium {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 15px 40px;
+  border-radius: 50px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-decoration: none;
+}
+.btn-glass-premium:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-5px);
+  color: #fff;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
 .metric-icon {
   font-size: 2.5rem;
   margin-bottom: 1rem;
