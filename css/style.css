@@ -278,10 +278,74 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 .scroll-top:hover { background: var(--royal-blue); transform: translateY(-5px); }
 
 /* Services */
-.service-icon {
-  font-size: 3rem; color: var(--neon-accent); margin-bottom: 1.5rem; transition: 0.3s;
+.service-card {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  border-bottom: 4px solid transparent;
 }
-.glass-card:hover .service-icon { transform: scale(1.1); }
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: var(--service-gradient);
+  opacity: 0.03;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+.service-card:hover {
+  border-bottom-color: var(--service-color);
+}
+.service-card:hover::before {
+  opacity: 0.08;
+}
+
+.service-icon-wrapper {
+  width: 75px;
+  height: 75px;
+  border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  background: #fff;
+  color: var(--service-color);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  transition: all 0.4s ease;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 2;
+}
+.service-card:hover .service-icon-wrapper {
+  background: var(--service-gradient);
+  color: #fff;
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px var(--service-shadow);
+}
+
+.service-v1 { --service-color: #FF512F; --service-gradient: linear-gradient(135deg, #FF512F, #DD2476); --service-shadow: rgba(221, 36, 118, 0.3); }
+.service-v2 { --service-color: #00b4db; --service-gradient: linear-gradient(135deg, #00b4db, #0083b0); --service-shadow: rgba(0, 180, 219, 0.3); }
+.service-v3 { --service-color: #8E2DE2; --service-gradient: linear-gradient(135deg, #8E2DE2, #4A00E0); --service-shadow: rgba(142, 45, 226, 0.3); }
+.service-v4 { --service-color: #f2994a; --service-gradient: linear-gradient(135deg, #f2994a, #f2c94c); --service-shadow: rgba(242, 153, 74, 0.3); }
+.service-v5 { --service-color: #11998e; --service-gradient: linear-gradient(135deg, #11998e, #38ef7d); --service-shadow: rgba(17, 153, 142, 0.3); }
+.service-v6 { --service-color: #ee0979; --service-gradient: linear-gradient(135deg, #ee0979, #ff6a00); --service-shadow: rgba(238, 9, 121, 0.3); }
+
+.read-more-btn {
+  display: inline-block;
+  padding: 8px 25px;
+  background: #f8fafc;
+  color: var(--service-color);
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.service-card:hover .read-more-btn {
+  background: var(--service-gradient);
+  color: #fff;
+  box-shadow: 0 5px 15px var(--service-shadow);
+}
 
 /* About / Vision / Core Values */
 .metric-box {
