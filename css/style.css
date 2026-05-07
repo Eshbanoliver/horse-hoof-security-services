@@ -114,6 +114,14 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   color: #fff;
 }
 
+#page-content {
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+.loading #page-content {
+  opacity: 0;
+}
+
 /* Hero Section */
 .hero-section {
   position: relative;
