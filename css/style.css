@@ -138,12 +138,38 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   display: flex;
   align-items: center;
 }
+.inner-hero {
+  position: relative;
+  padding: 180px 0 100px;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
 .hero-overlay {
   position: absolute; top: 0; left: 0; width: 100%; height: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+  z-index: 1;
+}
+.inner-hero-overlay {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8));
   z-index: 1;
 }
 .hero-content { position: relative; z-index: 2; }
+
+/* Breadcrumbs */
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\f105";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--silver);
+  padding: 0 12px;
+  font-size: 0.8rem;
+}
+.breadcrumb-item a:hover {
+  color: var(--neon-accent) !important;
+}
 .hero-content h1, .hero-content p { color: var(--text-dark) !important; }
 .hero-title { font-size: 4rem; line-height: 1.2; margin-bottom: 1.5rem; }
 
