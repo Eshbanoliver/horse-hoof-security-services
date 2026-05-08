@@ -67,11 +67,11 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 /* Navbar */
 .navbar {
   transition: all 0.4s ease;
-  padding: 1.5rem 0;
+  padding: 0.5rem 0;
   z-index: 1000;
 }
 .navbar.scrolled {
-  padding: 0.8rem 0;
+  padding: 0.3rem 0;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(0,0,0,0.05);
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 }
 
 .logo-img {
-  height: 45px;
+  height: 65px;
   width: auto;
   object-fit: contain;
 }
