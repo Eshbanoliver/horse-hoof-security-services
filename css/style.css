@@ -212,6 +212,31 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   color: var(--text-dark);
   font-size: 0.95rem;
 }
+
+/* Vibrant Tag Variants */
+.tag-variant-1 .tag-icon-box { background: linear-gradient(135deg, #FF9D6C 0%, #BB4E75 100%); color: #fff; }
+.tag-variant-2 .tag-icon-box { background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); color: #fff; }
+.tag-variant-3 .tag-icon-box { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; }
+.tag-variant-4 .tag-icon-box { background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); color: #fff; }
+
+.specialized-service-tag:hover {
+  transform: translateY(-8px) scale(1.05) rotate(1deg);
+  box-shadow: 0 15px 35px rgba(0, 136, 204, 0.2);
+}
+
+.tag-variant-1:hover { border-color: #FF9D6C; box-shadow: 0 10px 30px rgba(255, 157, 108, 0.3); }
+.tag-variant-2:hover { border-color: #4facfe; box-shadow: 0 10px 30px rgba(79, 172, 254, 0.3); }
+.tag-variant-3:hover { border-color: #667eea; box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3); }
+.tag-variant-4:hover { border-color: #43e97b; box-shadow: 0 10px 30px rgba(67, 233, 123, 0.3); }
+
+.specialized-service-tag:hover .tag-icon-box i {
+  animation: pulse-icon 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes pulse-icon {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
 .hero-content h1, .hero-content p { color: var(--text-dark) !important; }
 .hero-title { font-size: 4rem; line-height: 1.2; margin-bottom: 1.5rem; }
 
