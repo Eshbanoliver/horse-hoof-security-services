@@ -893,7 +893,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 
 /* Footer */
 footer {
-  background: var(--secondary-light);
+  background: linear-gradient(to bottom, #f8fafc, #f1f5f9);
   border-top: 1px solid rgba(0,0,0,0.05);
   padding: 60px 0 20px;
   position: relative;
