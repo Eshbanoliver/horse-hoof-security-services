@@ -77,7 +77,19 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   border-bottom: 1px solid rgba(0,0,0,0.05);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 }
-.navbar-brand { font-family: 'Outfit', sans-serif; font-weight: 800; font-size: 1.5rem; letter-spacing: 1px; color: var(--text-dark) !important;}
+.navbar-brand {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: var(--royal-blue) !important;
+  font-size: 1.5rem;
+}
+
+.logo-img {
+  height: 45px;
+  width: auto;
+  object-fit: contain;
+}
 .nav-link { color: var(--silver) !important; font-weight: 500; transition: 0.3s; position: relative; margin: 0 10px; }
 .nav-link::after {
   content: ''; position: absolute; bottom: -5px; left: 0; width: 0; height: 2px;
