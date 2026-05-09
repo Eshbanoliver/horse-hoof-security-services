@@ -62,87 +62,115 @@
     </section>
 
     <!-- Contact Section -->
-    <section class="section-padding bg-darker">
+    <section class="section-padding bg-mesh position-relative overflow-hidden">
+        <div class="vibrant-blob blob-cyan" style="top: 10%; left: -5%; opacity: 0.1;"></div>
+        <div class="vibrant-blob blob-purple" style="bottom: 10%; right: -5%; opacity: 0.1;"></div>
+        
         <div class="container">
-            <div class="row g-5">
+            <div class="row g-5 align-items-stretch">
                 
                 <!-- Contact Info Cards -->
                 <div class="col-lg-5" data-aos="fade-right">
-                    <h6 class="text-neon text-uppercase fw-bold letter-spacing-1">Get In Touch</h6>
-                    <h2 class="section-title mb-4">We're Here to Secure You</h2>
-                    <p class="text-silver mb-5">Reach out to us for any security inquiries, quotes, or consultations. Our team is available 24/7 to assist you.</p>
-                    
-                    <div class="glass-card p-4 mb-4 d-flex align-items-center">
-                        <div class="bg-primary rounded-circle text-white d-flex align-items-center justify-content-center fs-3 me-4" style="width: 60px; height: 60px; flex-shrink: 0;">
-                            <i class="fa-solid fa-location-dot"></i>
+                    <div class="contact-info-wrapper h-100 d-flex flex-column">
+                        <div class="mb-5">
+                            <h6 class="text-neon text-uppercase fw-bold letter-spacing-1 mb-3">Get In Touch</h6>
+                            <h2 class="section-title mb-4">We're Here to <span class="text-neon">Secure</span> You</h2>
+                            <p class="text-silver lead mb-0">Reach out to us for any security inquiries, quotes, or consultations. Our elite team is available 24/7 to ensure your protection.</p>
                         </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Head Office</h5>
-                            <p class="text-silver small mb-0">Udaipur, Rajasthan 313001</p>
-                        </div>
-                    </div>
-                    
-                    <div class="glass-card p-4 mb-4 d-flex align-items-center border-info">
-                        <div class="bg-info rounded-circle text-dark d-flex align-items-center justify-content-center fs-3 me-4" style="width: 60px; height: 60px; flex-shrink: 0;">
-                            <i class="fa-solid fa-phone-volume"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Call Us 24/7</h5>
-                            <a href="tel:09571450758" class="text-silver text-decoration-none small">095714 50758</a>
-                        </div>
-                    </div>
-                    
-                    <div class="glass-card p-4 d-flex align-items-center">
-                        <div class="bg-light rounded-circle text-dark d-flex align-items-center justify-content-center fs-3 me-4" style="width: 60px; height: 60px; flex-shrink: 0;">
-                            <i class="fa-solid fa-envelope-open-text"></i>
-                        </div>
-                        <div>
-                            <h5 class="fw-bold mb-1">Email Us</h5>
-                            <a href="#" class="text-silver text-decoration-none small">info@horsehoofsecurity.com</a>
+                        
+                        <div class="contact-info-cards mt-auto">
+                            <div class="glass-card contact-card mb-4 p-4 d-flex align-items-center" data-aos="fade-up" data-aos-delay="100">
+                                <div class="icon-box-vibrant me-4">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h5 class="fw-bold mb-1 text-dark">Head Office</h5>
+                                    <p class="text-silver small mb-0">Udaipur, Rajasthan 313001</p>
+                                </div>
+                            </div>
+                            
+                            <a href="tel:09571450758" class="text-decoration-none d-block mb-4" data-aos="fade-up" data-aos-delay="200">
+                                <div class="glass-card contact-card p-4 d-flex align-items-center border-neon-hover">
+                                    <div class="icon-box-vibrant icon-variant-2 me-4">
+                                        <i class="fa-solid fa-phone-volume"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-1 text-dark">Call Us 24/7</h5>
+                                        <p class="text-silver small mb-0">095714 50758</p>
+                                    </div>
+                                </div>
+                            </a>
+                            
+                            <a href="mailto:info@horsehoofsecurity.com" class="text-decoration-none d-block" data-aos="fade-up" data-aos-delay="300">
+                                <div class="glass-card contact-card p-4 d-flex align-items-center border-neon-hover">
+                                    <div class="icon-box-vibrant icon-variant-3 me-4">
+                                        <i class="fa-solid fa-envelope-open-text"></i>
+                                    </div>
+                                    <div>
+                                        <h5 class="fw-bold mb-1 text-dark">Email Us</h5>
+                                        <p class="text-silver small mb-0">info@horsehoofsecurity.com</p>
+                                    </div>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Contact Form -->
                 <div class="col-lg-7" data-aos="fade-left">
-                    <div class="glass-panel p-5">
-                        <h3 class="fw-bold mb-4">Send a Message</h3>
+                    <div class="glass-panel p-4 p-md-5 rounded-4 shadow-lg border-light position-relative">
+                        <div class="vibrant-blob blob-orange" style="top: -10%; right: -10%; opacity: 0.05; width: 200px; height: 200px;"></div>
+                        
+                        <div class="mb-4">
+                            <h3 class="fw-bold mb-2">Send a Message</h3>
+                            <p class="text-silver small">Fill out the form below and we'll get back to you within 24 hours.</p>
+                        </div>
+                        
                         <form id="contactForm" class="needs-validation" novalidate>
-                            <div class="row g-3">
+                            <div class="row g-4">
                                 <div class="col-md-6">
-                                    <label class="form-label text-silver small">Your Name</label>
-                                    <input type="text" class="form-control" placeholder="John Doe" required>
-                                    <div class="invalid-feedback">Please enter your name.</div>
+                                    <div class="form-floating-custom">
+                                        <input type="text" class="form-control glass-input" id="nameInput" placeholder="Your Name" required>
+                                        <label for="nameInput" class="text-silver small">Your Name</label>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <label class="form-label text-silver small">Phone Number</label>
-                                    <input type="tel" class="form-control" placeholder="+91 XXXXX XXXXX" required>
-                                    <div class="invalid-feedback">Please enter a valid phone number.</div>
+                                    <div class="form-floating-custom">
+                                        <input type="tel" class="form-control glass-input" id="phoneInput" placeholder="Phone Number" required>
+                                        <label for="phoneInput" class="text-silver small">Phone Number</label>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label text-silver small">Email Address</label>
-                                    <input type="email" class="form-control" placeholder="john@example.com" required>
-                                    <div class="invalid-feedback">Please enter a valid email address.</div>
+                                    <div class="form-floating-custom">
+                                        <input type="email" class="form-control glass-input" id="emailInput" placeholder="Email Address" required>
+                                        <label for="emailInput" class="text-silver small">Email Address</label>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label text-silver small">Service Required</label>
-                                    <select class="form-select form-control" required style="background-image: none;">
-                                        <option value="" selected disabled>Select a service</option>
-                                        <option value="guard">Security Guard Service</option>
-                                        <option value="commercial">Commercial Security</option>
-                                        <option value="event">Event Security</option>
-                                        <option value="vip">VIP Protection</option>
-                                        <option value="other">Other</option>
-                                    </select>
-                                    <div class="invalid-feedback">Please select a service.</div>
+                                    <div class="form-floating-custom">
+                                        <select class="form-select glass-input" id="serviceSelect" required>
+                                            <option value="" selected disabled>Select a service</option>
+                                            <option value="guard">Security Guard Service</option>
+                                            <option value="commercial">Commercial Security</option>
+                                            <option value="event">Event Security</option>
+                                            <option value="vip">VIP Protection</option>
+                                            <option value="other">Other</option>
+                                        </select>
+                                        <label for="serviceSelect" class="text-silver small">Service Required</label>
+                                    </div>
                                 </div>
                                 <div class="col-12">
-                                    <label class="form-label text-silver small">Your Message</label>
-                                    <textarea class="form-control" rows="4" placeholder="How can we help you?" required></textarea>
-                                    <div class="invalid-feedback">Please enter your message.</div>
+                                    <div class="form-floating-custom">
+                                        <textarea class="form-control glass-input" id="messageInput" rows="4" placeholder="How can we help you?" style="height: 120px;" required></textarea>
+                                        <label for="messageInput" class="text-silver small">Your Message</label>
+                                    </div>
                                 </div>
                                 <div class="col-12 mt-4">
-                                    <button type="submit" class="btn btn-royal w-100 py-3">Send Message <i class="fa-solid fa-paper-plane ms-2"></i></button>
+                                    <button type="submit" class="btn btn-royal btn-lg w-100 py-3 shadow-neon-hover">
+                                        <span class="d-flex align-items-center justify-content-center">
+                                            Send Message <i class="fa-solid fa-paper-plane ms-2"></i>
+                                        </span>
+                                    </button>
                                 </div>
                             </div>
                         </form>
