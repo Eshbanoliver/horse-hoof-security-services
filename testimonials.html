@@ -46,9 +46,10 @@
 
     <main id="page-content">
     <!-- Page Header -->
-    <section class="inner-hero" style="background-image: url('assets/images/hero_bg.png');">
+    <section class="inner-hero bg-mesh position-relative overflow-hidden">
         <div class="inner-hero-overlay"></div>
-        <div class="vibrant-blob blob-purple" style="top: -10%; right: -5%; opacity: 0.15;"></div>
+        <div class="vibrant-blob blob-cyan" style="top: -10%; left: -5%;"></div>
+        <div class="vibrant-blob blob-purple" style="bottom: -10%; right: -5%;"></div>
         <div class="container hero-content text-center">
             <h1 class="display-3 fw-bold mb-3" data-aos="fade-down">Client <span class="text-neon">Testimonials</span></h1>
             <nav aria-label="breadcrumb" data-aos="fade-up" data-aos-delay="200">
@@ -61,68 +62,76 @@
     </section>
 
     <!-- Testimonials Slider Section -->
-    <section class="section-padding bg-darker">
+    <section class="section-padding bg-mesh position-relative overflow-hidden">
+        <div class="vibrant-blob blob-orange" style="opacity: 0.05; left: 50%; transform: translateX(-50%);"></div>
         <div class="container">
             <div class="text-center mb-5" data-aos="fade-up">
                 <h6 class="text-neon text-uppercase fw-bold letter-spacing-1">Feedback</h6>
                 <h2 class="section-title">What Our Clients Say</h2>
+                <p class="text-silver max-w-600 mx-auto">Hear from our satisfied partners about their experience with our elite security services.</p>
             </div>
             
             <div class="row justify-content-center">
-                <div class="col-lg-8" data-aos="zoom-in">
+                <div class="col-lg-10" data-aos="zoom-in">
                     <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner glass-panel rounded-4 p-5 text-center position-relative">
-                            <i class="fa-solid fa-quote-right quote-icon"></i>
+                        <div class="carousel-inner glass-panel rounded-4 p-4 p-md-5 text-center position-relative shadow-lg border-light">
+                            <i class="fa-solid fa-quote-right quote-icon text-neon opacity-25" style="font-size: 6rem; top: 10%; right: 5%;"></i>
                             
                             <!-- Testimonial 1 -->
                             <div class="carousel-item active">
-                                <div class="testimonial-user mb-4">
-                                    <img src="assets/images/user_1.png" alt="Rajesh Sharma" class="rounded-circle shadow-lg" style="width: 100px; height: 100px; object-fit: cover; border: 4px solid var(--neon-accent);">
+                                <div class="testimonial-content px-lg-5">
+                                    <div class="testimonial-user mb-4">
+                                        <img src="assets/images/user_1.png" alt="Rajesh Sharma" class="rounded-circle shadow-lg" style="width: 120px; height: 120px; object-fit: cover; border: 5px solid var(--neon-accent);">
+                                    </div>
+                                    <div class="text-warning mb-3 fs-4">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="fs-4 text-dark mb-4 fw-medium lh-base">"Horse Hoof Security Services completely transformed our corporate security. Their guards are highly professional, always alert, and provide a welcoming presence. Highly recommended for any serious business."</p>
+                                    <h5 class="fw-bold text-royal mb-1">Rajesh Sharma</h5>
+                                    <span class="text-neon fw-bold small text-uppercase letter-spacing-1">CEO, Udaipur Tech Hub</span>
                                 </div>
-                                <div class="text-warning mb-3 fs-5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="lead text-silver fst-italic mb-4">"Horse Hoof Security Services completely transformed our corporate security. Their guards are highly professional, always alert, and provide a welcoming presence. Highly recommended!"</p>
-                                <h5 class="fw-bold text-dark mb-0">Rajesh Sharma</h5>
-                                <span class="text-neon small">Corporate Client</span>
                             </div>
                             
                             <!-- Testimonial 2 -->
                             <div class="carousel-item">
-                                <div class="testimonial-user mb-4">
-                                    <img src="assets/images/user_2.png" alt="Anita Desai" class="rounded-circle shadow-lg" style="width: 100px; height: 100px; object-fit: cover; border: 4px solid var(--neon-accent);">
+                                <div class="testimonial-content px-lg-5">
+                                    <div class="testimonial-user mb-4">
+                                        <img src="assets/images/user_2.png" alt="Anita Desai" class="rounded-circle shadow-lg" style="width: 120px; height: 120px; object-fit: cover; border: 5px solid var(--neon-accent);">
+                                    </div>
+                                    <div class="text-warning mb-3 fs-4">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <p class="fs-4 text-dark mb-4 fw-medium lh-base">"We hired them for our annual gala event, and their crowd control and VIP protection were flawless. The team was discreet yet extremely effective, ensuring everyone felt safe."</p>
+                                    <h5 class="fw-bold text-royal mb-1">Anita Desai</h5>
+                                    <span class="text-neon fw-bold small text-uppercase letter-spacing-1">Event Director</span>
                                 </div>
-                                <div class="text-warning mb-3 fs-5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="lead text-silver fst-italic mb-4">"We hired them for our annual gala event, and their crowd control and VIP protection were flawless. The team was discreet yet extremely effective."</p>
-                                <h5 class="fw-bold text-dark mb-0">Anita Desai</h5>
-                                <span class="text-neon small">Event Organizer</span>
                             </div>
                             
                             <!-- Testimonial 3 -->
                             <div class="carousel-item">
-                                <div class="testimonial-user mb-4">
-                                    <img src="assets/images/user_3.png" alt="Vikram Singh" class="rounded-circle shadow-lg" style="width: 100px; height: 100px; object-fit: cover; border: 4px solid var(--neon-accent);">
+                                <div class="testimonial-content px-lg-5">
+                                    <div class="testimonial-user mb-4">
+                                        <img src="assets/images/user_3.png" alt="Vikram Singh" class="rounded-circle shadow-lg" style="width: 120px; height: 120px; object-fit: cover; border: 5px solid var(--neon-accent);">
+                                    </div>
+                                    <div class="text-warning mb-3 fs-4">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                                    </div>
+                                    <p class="fs-4 text-dark mb-4 fw-medium lh-base">"Their mobile patrol service gives our residential community peace of mind every night. They are reliable, punctual, and very quick to respond to any concerns that arise."</p>
+                                    <h5 class="fw-bold text-royal mb-1">Vikram Singh</h5>
+                                    <span class="text-neon fw-bold small text-uppercase letter-spacing-1">Society President</span>
                                 </div>
-                                <div class="text-warning mb-3 fs-5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
-                                </div>
-                                <p class="lead text-silver fst-italic mb-4">"Their mobile patrol service gives our residential community peace of mind every night. They are reliable, punctual, and very quick to respond to any concerns."</p>
-                                <h5 class="fw-bold text-dark mb-0">Vikram Singh</h5>
-                                <span class="text-neon small">Residential Society Head</span>
                             </div>
                         </div>
                         
                         <!-- Carousel Controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
+                        <div class="carousel-nav-btns mt-4 d-flex justify-content-center gap-3">
+                            <button class="btn btn-outline-royal rounded-circle p-0 d-flex align-items-center justify-content-center" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="width: 50px; height: 50px;">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </button>
+                            <button class="btn btn-outline-royal rounded-circle p-0 d-flex align-items-center justify-content-center" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="width: 50px; height: 50px;">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </button>
+                        </div>
                         
                         <div class="carousel-indicators position-relative mt-4">
                             <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active bg-neon"></button>
@@ -136,32 +145,64 @@
     </section>
 
     <!-- More Reviews Grid -->
-    <section class="section-padding">
+    <section class="section-padding bg-light position-relative">
+        <div class="vibrant-blob blob-cyan" style="opacity: 0.05; top: 0; left: 0;"></div>
         <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="section-title">Success Stories</h2>
+                <p class="text-silver">More words from our valued clients across different sectors.</p>
+            </div>
             <div class="row g-4">
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                    <div class="glass-card p-4">
-                        <div class="d-flex align-items-center mb-3">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="glass-card p-4 h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center mb-4">
                             <img src="assets/images/user_4.png" alt="Meera Patel" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--neon-accent);">
                             <div>
-                                <h5 class="mb-0 fw-bold">Meera Patel</h5>
+                                <h6 class="mb-0 fw-bold">Meera Patel</h6>
                                 <div class="text-warning small"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                             </div>
                         </div>
-                        <p class="text-silver small mb-0">"The best security consulting we have ever received. They identified vulnerabilities we didn't even know existed and provided a robust plan to secure our warehouse."</p>
+                        <p class="text-silver mb-0 fst-italic">"The best security consulting we have ever received. They identified vulnerabilities we didn't even know existed and provided a robust plan to secure our warehouse."</p>
                     </div>
                 </div>
-                <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                    <div class="glass-card p-4">
-                        <div class="d-flex align-items-center mb-3">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="glass-card p-4 h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center mb-4">
                             <img src="assets/images/user_5.png" alt="Sanjay Verma" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--neon-accent);">
                             <div>
-                                <h5 class="mb-0 fw-bold">Sanjay Verma</h5>
+                                <h6 class="mb-0 fw-bold">Sanjay Verma</h6>
                                 <div class="text-warning small"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
                             </div>
                         </div>
-                        <p class="text-silver small mb-0">"We use their ATM security services. Very diligent guards, strictly follow protocols, and we have had zero incidents since partnering with Horse Hoof."</p>
+                        <p class="text-silver mb-0 fst-italic">"We use their ATM security services. Very diligent guards, strictly follow protocols, and we have had zero incidents since partnering with Horse Hoof."</p>
                     </div>
+                </div>
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="glass-card p-4 h-100 d-flex flex-column">
+                        <div class="d-flex align-items-center mb-4">
+                            <img src="assets/images/user_3.png" alt="Arjun Meena" class="rounded-circle me-3" style="width: 60px; height: 60px; object-fit: cover; border: 2px solid var(--neon-accent);">
+                            <div>
+                                <h6 class="mb-0 fw-bold">Arjun Meena</h6>
+                                <div class="text-warning small"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+                            </div>
+                        </div>
+                        <p class="text-silver mb-0 fst-italic">"Responsive, professional, and reliable. Their team handles our industrial site with extreme care and precision. Highly recommended for industrial security."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Review CTA -->
+    <section class="section-padding bg-mesh position-relative overflow-hidden">
+        <div class="vibrant-blob blob-purple" style="opacity: 0.1; top: -10%; right: -5%;"></div>
+        <div class="container text-center" data-aos="zoom-in">
+            <div class="glass-panel p-5 rounded-4 shadow-lg border-light">
+                <h2 class="fw-bold mb-4">Have You Used Our Services?</h2>
+                <p class="text-silver lead mb-5">Your feedback helps us maintain our elite standards and provide better protection for everyone.</p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap">
+                    <a href="contact.html" class="btn btn-royal btn-lg px-5">Leave a Review</a>
+                    <a href="https://g.page/r/your-google-review-link" target="_blank" class="btn btn-outline-dark btn-lg px-5 rounded-pill">Review on Google</a>
                 </div>
             </div>
         </div>
@@ -179,6 +220,12 @@
                         <span class="fs-4 fw-bold text-dark">HORSE HOOF</span>
                     </a>
                     <p class="text-silver pe-lg-4">Premium security services providing unmatched protection, professional personnel, and peace of mind for businesses and individuals.</p>
+                    <div class="d-flex mt-4">
+                        <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-2 col-md-6">
                     <h5 class="text-dark fw-bold mb-4">Quick Links</h5>
@@ -186,6 +233,7 @@
                         <a href="index.html">Home</a>
                         <a href="about.html">About Us</a>
                         <a href="services.html">Services</a>
+                        <a href="testimonials.html">Testimonials</a>
                         <a href="contact.html">Contact Us</a>
                     </div>
                 </div>
@@ -195,6 +243,8 @@
                         <a href="services.html">Security Guard Service</a>
                         <a href="services.html">Commercial Security</a>
                         <a href="services.html">Event Security</a>
+                        <a href="services.html">VIP Security</a>
+                        <a href="services.html">Mobile Patrol</a>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -202,6 +252,7 @@
                     <ul class="list-unstyled text-silver">
                         <li class="mb-3 d-flex align-items-start"><i class="fa-solid fa-location-dot mt-1 me-3 text-neon"></i><span>Udaipur, Rajasthan 313001</span></li>
                         <li class="mb-3 d-flex align-items-start"><i class="fa-solid fa-phone mt-1 me-3 text-neon"></i><span>095714 50758</span></li>
+                        <li class="mb-3 d-flex align-items-start"><i class="fa-solid fa-envelope mt-1 me-3 text-neon"></i><span>info@horsehoofsecurity.com</span></li>
                     </ul>
                 </div>
             </div>

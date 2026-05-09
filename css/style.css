@@ -41,6 +41,11 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
 .text-silver { color: var(--silver); }
 .text-royal { color: var(--royal-blue); }
 
+/* Utilities */
+.letter-spacing-1 { letter-spacing: 1px; }
+.max-w-600 { max-width: 600px; }
+.opacity-25 { opacity: 0.25; }
+
 /* Glassmorphism */
 .glass-panel {
   background: #ffffff;
@@ -133,6 +138,21 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Outfit', sans-serif; font-weight: 700; co
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(29, 78, 216, 0.5);
   color: #fff;
+}
+
+.btn-outline-royal {
+  background: transparent;
+  color: var(--royal-blue);
+  border: 2px solid var(--royal-blue);
+  border-radius: 30px;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+.btn-outline-royal:hover {
+  background: var(--royal-blue);
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(29, 78, 216, 0.2);
 }
 
 #page-content {
