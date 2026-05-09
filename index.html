@@ -11,6 +11,8 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
@@ -31,7 +33,7 @@
     <nav class="navbar navbar-expand-lg fixed-top navbar-light">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="assets/images/logo.png" alt="Horse Hoof Logo" class="logo-img me-2">
+                <img src="assets/images/logo.png" alt="Horse Hoof Logo" class="logo-img me-2" loading="lazy">
                 HORSE HOOF
             </a>
             <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -370,44 +372,95 @@
                 <h2 class="section-title">What Our Clients Say</h2>
             </div>
             
-            <div class="row justify-content-center">
-                <div class="col-lg-8" data-aos="zoom-in">
-                    <div id="homeTestimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-inner glass-panel rounded-4 p-5 text-center position-relative">
-                            <i class="fa-solid fa-quote-right quote-icon"></i>
-                            
-                            <!-- Testimonial 1 -->
-                            <div class="carousel-item active">
-                                <div class="testimonial-user mb-4">
-                                    <img src="assets/images/user_1.png" alt="Rajesh Sharma" class="rounded-circle shadow-lg" style="width: 100px; height: 100px; object-fit: cover; border: 4px solid var(--neon-accent);">
-                                </div>
-                                <div class="text-warning mb-3 fs-5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="lead text-silver fst-italic mb-4">"Horse Hoof Security Services completely transformed our corporate security. Their guards are highly professional, always alert, and provide a welcoming presence."</p>
-                                <h5 class="fw-bold text-dark mb-0">Rajesh Sharma</h5>
-                                <span class="text-neon small">CEO, Udaipur Tech Hub</span>
-                            </div>
-                            
-                            <!-- Testimonial 2 -->
-                            <div class="carousel-item">
-                                <div class="testimonial-user mb-4">
-                                    <img src="assets/images/user_2.png" alt="Anita Desai" class="rounded-circle shadow-lg" style="width: 100px; height: 100px; object-fit: cover; border: 4px solid var(--neon-accent);">
-                                </div>
-                                <div class="text-warning mb-3 fs-5">
-                                    <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                                </div>
-                                <p class="lead text-silver fst-italic mb-4">"We hired them for our annual gala event, and their crowd control and VIP protection were flawless. The team was discreet yet extremely effective."</p>
-                                <h5 class="fw-bold text-dark mb-0">Anita Desai</h5>
-                                <span class="text-neon small">Event Director</span>
+            <!-- Infinite Testimonial Scroll -->
+            <div class="testimonial-scroll-container">
+                <div class="testimonial-scroll-track">
+                    <!-- Testimonial Card 1 -->
+                    <div class="testimonial-scroll-card glass-panel">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="assets/images/user_1.png" alt="Rajesh Sharma" class="rounded-circle me-3" loading="lazy" style="width: 50px; height: 50px; object-fit: cover; border: 2px solid var(--neon-accent);">
+                            <div>
+                                <h6 class="fw-bold mb-0">Rajesh Sharma</h6>
+                                <small class="text-neon">CEO, Udaipur Tech Hub</small>
                             </div>
                         </div>
-                        
-                        <!-- Carousel Indicators -->
-                        <div class="carousel-indicators position-relative mt-4">
-                            <button type="button" data-bs-target="#homeTestimonialCarousel" data-bs-slide-to="0" class="active bg-neon"></button>
-                            <button type="button" data-bs-target="#homeTestimonialCarousel" data-bs-slide-to="1" class="bg-neon"></button>
+                        <div class="text-warning mb-2 small">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
+                        <p class="text-silver small mb-0">"Horse Hoof Security Services completely transformed our corporate security. Their guards are highly professional."</p>
+                    </div>
+
+                    <!-- Testimonial Card 2 -->
+                    <div class="testimonial-scroll-card glass-panel">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="assets/images/user_2.png" alt="Anita Desai" class="rounded-circle me-3" loading="lazy" style="width: 50px; height: 50px; object-fit: cover; border: 2px solid var(--neon-accent);">
+                            <div>
+                                <h6 class="fw-bold mb-0">Anita Desai</h6>
+                                <small class="text-neon">Event Director</small>
+                            </div>
+                        </div>
+                        <div class="text-warning mb-2 small">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-silver small mb-0">"We hired them for our annual gala event, and their crowd control and VIP protection were flawless."</p>
+                    </div>
+
+                    <!-- Testimonial Card 3 -->
+                    <div class="testimonial-scroll-card glass-panel">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="assets/images/user_1.png" alt="Vikram Singh" class="rounded-circle me-3" loading="lazy" style="width: 50px; height: 50px; object-fit: cover; border: 2px solid var(--neon-accent);">
+                            <div>
+                                <h6 class="fw-bold mb-0">Vikram Singh</h6>
+                                <small class="text-neon">Hotel Manager</small>
+                            </div>
+                        </div>
+                        <div class="text-warning mb-2 small">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-silver small mb-0">"Excellent service for our luxury resort. The guards are punctual, well-trained, and polite."</p>
+                    </div>
+
+                    <!-- Duplicate Cards for Seamless Loop -->
+                    <div class="testimonial-scroll-card glass-panel">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="assets/images/user_1.png" alt="Rajesh Sharma" class="rounded-circle me-3" loading="lazy" style="width: 50px; height: 50px; object-fit: cover; border: 2px solid var(--neon-accent);">
+                            <div>
+                                <h6 class="fw-bold mb-0">Rajesh Sharma</h6>
+                                <small class="text-neon">CEO, Udaipur Tech Hub</small>
+                            </div>
+                        </div>
+                        <div class="text-warning mb-2 small">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-silver small mb-0">"Horse Hoof Security Services completely transformed our corporate security. Their guards are highly professional."</p>
+                    </div>
+
+                    <div class="testimonial-scroll-card glass-panel">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="assets/images/user_2.png" alt="Anita Desai" class="rounded-circle me-3" loading="lazy" style="width: 50px; height: 50px; object-fit: cover; border: 2px solid var(--neon-accent);">
+                            <div>
+                                <h6 class="fw-bold mb-0">Anita Desai</h6>
+                                <small class="text-neon">Event Director</small>
+                            </div>
+                        </div>
+                        <div class="text-warning mb-2 small">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-silver small mb-0">"We hired them for our annual gala event, and their crowd control and VIP protection were flawless."</p>
+                    </div>
+
+                    <div class="testimonial-scroll-card glass-panel">
+                        <div class="d-flex align-items-center mb-3">
+                            <img src="assets/images/user_1.png" alt="Vikram Singh" class="rounded-circle me-3" loading="lazy" style="width: 50px; height: 50px; object-fit: cover; border: 2px solid var(--neon-accent);">
+                            <div>
+                                <h6 class="fw-bold mb-0">Vikram Singh</h6>
+                                <small class="text-neon">Hotel Manager</small>
+                            </div>
+                        </div>
+                        <div class="text-warning mb-2 small">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-silver small mb-0">"Excellent service for our luxury resort. The guards are punctual, well-trained, and polite."</p>
                     </div>
                 </div>
             </div>
